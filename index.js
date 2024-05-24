@@ -6,8 +6,6 @@ import profRouter from "./route/profRoute.js";
 import matRouter from "./route/matRoute.js";
 import classeRouter from "./route/classeRoute.js";
 import niveauRouter from "./route/niveauRoute.js";
-import edtRouter from "./route/edtRoute.js";
-import generateRouter from "./route/generateEdtRoute.js";
 
 const app = express();
 
@@ -29,8 +27,6 @@ app.use("/api", profRouter);
 app.use("/api", matRouter);
 app.use("/api", classeRouter);
 app.use("/api", niveauRouter);
-app.use("/api", edtRouter);
-app.use("/api", generateRouter);
 
 app.listen(5000, () => {
   connect();
