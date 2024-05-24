@@ -23,10 +23,10 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api", profRouter);
-app.use("/api", matRouter);
-app.use("/api", classeRouter);
-app.use("/api", niveauRouter);
+app.use("/api/gestionEcole", profRouter);
+app.use("/api/gestionEcole", matRouter);
+app.use("/api/gestionEcole", classeRouter);
+app.use("/api/gestionEcole", niveauRouter);
 
 app.listen(5000, () => {
   connect();

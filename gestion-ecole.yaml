@@ -1,11 +1,16 @@
 openapi: 3.0.1
 info:
-  title: 'Gestion Ecole'
-  version: 1.0.0
+  title: Gestion Ecole
+  version: 0.1.0
 servers:
-  - url: /api
+- url: "{server}:{port}/gestionEcole"
+  variables:
+    port:
+      default: '9090'
+    server:
+      default: http://localhost
 paths:
-  /classe:
+  "/classe":
     get:
       summary: Get all classe
       operationId: getAllClasse
