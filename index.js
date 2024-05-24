@@ -11,7 +11,7 @@ const app = express();
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/generate-edt");
+    await mongoose.connect("mongodb+srv://lovinglalainaa:s6QZVUXEXQgvlvhp@cluster0.zauooiv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/generate-edt");
     console.log("connected");
   } catch (err) {
     throw err;
