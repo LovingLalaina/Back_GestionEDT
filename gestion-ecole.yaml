@@ -3,7 +3,7 @@ info:
   title: 'Gestion Ecole'
   version: 1.0.0
 servers:
-  - url: /
+  - url: /api
 paths:
   /classe:
     get:
